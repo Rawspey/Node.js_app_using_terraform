@@ -5,11 +5,11 @@ This repo uses Terraform to deploy the kubectl manifest of a simple Node.js app 
 
 ## Prerequisites
 
-- [Docker](#Docker) to run an instance of HashiCups locally.
-- [Kubectl](#Kubectl) to perform basic Kubernetes functions on our cluster
-- [Terraform CLI](#Terraform).
+* [Docker](#Docker) to run an instance of HashiCups locally.
+[Kubectl](#Kubectl) to perform basic Kubernetes functions on our cluster
+[Terraform CLI](#Terraform).
 
-- ### [Install Docker](#Docker)
+- ### Install Docker<a name="Docker"></a>
 Run the below command to install Docker
 ```bash
 sudo apt update -y && sudo apt install docker.io -y && sudo systemctl enable --now docker
@@ -26,9 +26,7 @@ Verify Kubectl Installation
 ```
 kubectl version --output=yaml
 ```
-
 - ### [Install Terraform](#Terraform)
-
 Install Terraform from APT repository
 ```bash
 sudo apt install software-properties-common gnupg2 curl -y
@@ -52,9 +50,15 @@ on linux_amd64
 ```
 ## Lets Begin
 
-Clone this repo:
+- Clone this repo:
 ```
 git clone https://github.com/emmanuelogar/Node.js_app_using_terraform.git && cd Node.js_app_using_terraform\ 
 ```
 run ```./install_kind.sh ``` to install kind and create a local kind cluster with the specified name, provides cluster information, downloads the kubeconfig for the cluster and store in a file.
 
+- Deploy the kubernetes manifest using the kubectl terraform provider to the running kind cluster.
+```
+terraform init
+terraform plan -out=tfplan
+terraform apply "tfplan"
+```

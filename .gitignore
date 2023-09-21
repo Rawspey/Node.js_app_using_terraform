@@ -8,7 +8,9 @@ npm-debug.log*
 
 # Ignore environment-specific files
 .env
-
+tfplan
 # Ignore package-lock files
 package-lock.json
-
+.terraform.lock.hcl
+*.tfstate
+.terraform
