@@ -60,7 +60,7 @@ sudo apt-get install helm
 ## Lets Begin
 - Clone this repo:
 ```
-git clone https://github.com/emmanuelogar/Node.js_app_using_terraform.git && cd Node.js_app_using_terraform\ 
+git clone https://github.com/emmanuelogar/Node.js_app_using_terraform.git && cd Node.js_app_using_terraform
 ```
 run ```./install_kind.sh ``` to install kind and create a local kind cluster with the specified name, provides cluster information, downloads the kubeconfig for the cluster and store in a file.
 
