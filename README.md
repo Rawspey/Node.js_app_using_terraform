@@ -8,7 +8,7 @@ This repo uses Terraform to deploy the kubectl manifest of a simple Node.js app 
 * [Docker](#Docker) to run kind cluster locally.
 - [Kubectl](#Kubectl) to perform basic Kubernetes functions on our cluster
 - [Terraform CLI](#Terraform).
-- [Helm](#Helm)
+- [Helm](#Helm) to setup monitoring and observability for the prometheus cluster.
 
 ### Install Docker<a name="Docker"></a>
 Run the below command to install Docker
