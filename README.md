@@ -5,7 +5,7 @@ This repo uses Terraform to deploy the kubectl manifest of a simple Node.js app 
 
 ## Prerequisites
 
-* [Docker](#Docker) to run an instance of HashiCups locally.
+* [Docker](#Docker) to run kind cluster locally.
 - [Kubectl](#Kubectl) to perform basic Kubernetes functions on our cluster
 - [Terraform CLI](#Terraform).
 - [Helm](#Helm)
