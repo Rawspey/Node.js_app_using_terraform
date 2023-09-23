@@ -64,6 +64,8 @@ git clone https://github.com/emmanuelogar/Node.js_app_using_terraform.git && cd 
 ```
 run ```./install_kind.sh ``` to install kind and create a local kind cluster with the specified name, provides cluster information, downloads the kubeconfig for the cluster and store in a file.
 
+Run the following terraform commands to:
+
 - Deploy the kubernetes manifest to the running kind cluster using the kubectl terraform provider.
 - setup monitoring and observability for the prometheus cluster using the kube-prometheus stack with terraform helm provider.
 
